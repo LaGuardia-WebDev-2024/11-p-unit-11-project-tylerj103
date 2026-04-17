@@ -27,47 +27,50 @@ Select ONE Additional
     <h1>My Top 3 Animals <span>That Are Adorable</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-        <img class="mem3" src="https://ogden_images.s3.amazonaws.com/www.iamcountryside.com/images/sites/2/2022/02/13131252/AdobeStock_74466779-scaled-e1675118602223.jpeg" 
+        <h3 id="mem1">Animal #1</h3>
+        <p>Baby goats, or kids, are energetic, highly playful animals known for "stotting" (jumping/hopping) to develop coordination and agility. They require specialized care, including bottle-feeding or dam-raising, milk replacer until about 60 days old, and secure housing with draft-free, dry shelter..</p>
+        <img class="mem1class" src="https://ogden_images.s3.amazonaws.com/www.iamcountryside.com/images/sites/2/2022/02/13131252/AdobeStock_74466779-scaled-e1675118602223.jpeg" 
         width="300">
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-         <img class="mem3" src="https://www.stancsmith.com/uploads/4/8/9/6/48964465/ab55ea58cf68ad840fe55bcda3c4a9ce30cd97f2_orig.jpg" 
+        <h3 id="mem2">Animal #2</h3>
+        <p>The quokka is a small macropod about the size of a domestic cat. It is the only member of the genus Setonix. Like other marsupials in the macropod family, the quokka is herbivorous and mainly nocturnal. The quokka's range is a small area of southwestern Australia.</p>
+         <img class="mem2class" src="https://www.stancsmith.com/uploads/4/8/9/6/48964465/ab55ea58cf68ad840fe55bcda3c4a9ce30cd97f2_orig.jpg" 
         width="300">
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-        <img class="mem3" src="https://www.colchesterzoologicalsociety.com/wp-content/uploads/2024/09/Red-Panda-7.jpg" 
+        <h3 id="mem3">Animal #3</h3>
+        <p>The red panda, also known as the lesser panda, is a small mammal native to the eastern Himalayas and southwestern China. It has dense reddish-brown fur with a black belly and legs, white-lined ears, a mostly white muzzle and a ringed tail.</p>
+        <img class="mem3class" src="https://www.colchesterzoologicalsociety.com/wp-content/uploads/2024/09/Red-Panda-7.jpg" 
         width="300">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-
+$(".mem1class").hide()
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
           $("#mem1").text("Baby Goat");
+      $(".mem1class").show(1000)
       });
-
+$(".mem2class").hide()
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
         $("#mem2").text("Quokka");
+        $(".mem2class").show(1000)
       });
-
+$(".mem3class").hide()
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Red Panda");
         $("Animal#3").show(2000)
+        $(".mem3class").show(1000)
       });
 
 
